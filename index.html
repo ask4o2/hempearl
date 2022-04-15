@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- Navbar -->
+    <nav class="relative border border-b-gray-100 shadow">
+      <div
+        class="container flex justify-between items-center p-3 mx-auto md:justify-around"
+      >
+        <div class="logo">
+          <h2 class="font-bold text-2xl">Hempearl</h2>
+        </div>
+
+        <!-- nav right -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="hover:text-gray">Home</a>
+          <a href="#" class="hover:text-gray">Products</a>
+          <a href="#" class="hover:text-gray">About us</a>
+          <a href="#" class="hover:text-gray">Testimonials</a>
+        </div>
+
+        <!-- contacts us -->
+        <a
+          href="#"
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-red-500 rounded-full"
+        >
+          Get in touch
+        </a>
+
+        <!-- hamburger button -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute z-50 flex-col hidden items-center self-end py-8 mt-0.5 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#" class="">Home</a>
+          <a href="#" class="">Products</a>
+          <a href="#" class="">About us</a>
+          <a href="#" class="">Testimonials</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="hero" class="relative z-20">
+      <div
+        id="hero-container"
+        class="container  my-6 mx-auto border space-x-6 space-y-6 justify-center flex flex-col px-6 py-16 md:flex-row"
+      >
+        <div
+          id="hero-1"
+          class="flex flex-col rounded-md justify-center md:space-y-8 text-center text-white"
+        >
+          <h2 class="font-bold text-2xl">
+            Skin Care Products
+          </h2>
+
+          <p class="p-2 ">Scrub | Natural oil</p>
+        </div>
+        <!-- <div class="min-w-lg">
+          <img src="./icons8-team-y2T5hT7pWx4-unsplash_1.jpg" alt="" />
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container mx-auto mxa px-6 py-8 border">
+        <div class="text-center font-bold text-3xl my-8">Products</div>
+        <div class="container flex flex-wrap justify-center mx-auto p-2">
+          <div class="p-2 max-w-xs">
+            <div class="border rounded-md shadow">
+              <img
+                class="rounded-t-md"
+                src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+                alt=""
+              />
+              <div class="p-3">
+                <h2>Ankara bags</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 max-w-xs">
+            <div class="border rounded-md shadow">
+              <img
+                class="rounded-t-md"
+                src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+                alt=""
+              />
+              <div class="p-3">
+                <h2>Ankara bags</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 max-w-xs">
+            <div class="border rounded-md shadow">
+              <img
+                class="rounded-t-md"
+                src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+                alt=""
+              />
+              <div class="p-3">
+                <h2>Ankara bags</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 max-w-xs">
+            <div class="border rounded-md shadow">
+              <img
+                class="rounded-t-md"
+                src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+                alt=""
+              />
+              <div class="p-3">
+                <h2>Ankara bags</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission statement -->
+
+    <!-- contact us  -->
+    <section id="connect">
+      <div class="container mx-auto flex flex-col px-6 py-8 mt-10">
+        <!-- heading -->
+        <div class="text-center">
+          <h2 class="text-3xl font-bold">Get in touch</h2>
+        </div>
+
+        <div class="container mx-auto mt-6">
+          <form action="" class="flex flex-col md:w-1/2 mx-auto justify-center">
+            <!-- form input -->
+            <input
+              placeholder="Full Name"
+              type="text"
+              class="p-3 w-100 border border-grey-300 rounded-md mt-4 shadow focus:outline-none"
+            />
+            <!-- form input -->
+            <input
+              placeholder="Email"
+              type="email"
+              class="p-3 w-100 border border-grey-300 rounded-md mt-4 shadow focus:outline-none"
+            />
+            <!-- form input -->
+            <input
+              placeholder="Phone number"
+              type="tel"
+              class="p-3 w-100 border border-grey-300 rounded-md mt-4 shadow focus:outline-none"
+            />
+
+            <!-- form item -->
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="p-3 w-100 border border-grey-300 rounded-md mt-4 shadow focus:outline-none"
+            ></textarea>
+
+            <button
+              class="bg-blue-300 rounded-full p-3 px-6 text-center text-white mx-auto mt-4"
+            >
+              Let's talk
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container mx-auto px-6 py-8">
+        <div class="text-2xl text-center mb-8">What our clients say</div>
+
+        <div
+          id="test-scroll"
+          class="container mx-auto mt-6 pt-6 py-16 flex space-x-4 overflow-x-scroll"
+        >
+          <!-- testimonial 1 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-300 shrink-0 max-w-xs"
+          >
+            <img
+              src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+              alt=""
+              class="w-16 h-16 rounded-full -mt-12"
+            />
+            <h5 class="text-lg font-bold">Jane doe</h5>
+            <p class="text-sm text-gray-600">
+              "I am glad to have come across Hempearl on my timeline. They are
+              now my one-stop plug for african fabrics and accessories"
+            </p>
+          </div>
+
+          <!-- testimonial 2 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-300 shrink-0 max-w-xs"
+          >
+            <img
+              src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+              alt=""
+              class="w-16 h-16 rounded-full -mt-12"
+            />
+            <h5 class="text-lg font-bold">Jane doe</h5>
+            <p class="text-sm text-gray-600">
+              "I am glad to have come across Hempearl on my timeline. They are
+              now my one-stop plug for african fabrics and accessories"
+            </p>
+          </div>
+          <!-- testimonial 3 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-300 shrink-0 max-w-xs"
+          >
+            <img
+              src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+              alt=""
+              class="w-16 h-16 rounded-full -mt-12"
+            />
+            <h5 class="text-lg font-bold">Jane doe</h5>
+            <p class="text-sm text-gray-600">
+              "I am glad to have come across Hempearl on my timeline. They are
+              now my one-stop plug for african fabrics and accessories"
+            </p>
+          </div>
+          <!-- testimonial 4 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-300 shrink-0 max-w-xs"
+          >
+            <img
+              src="./raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg"
+              alt=""
+              class="w-16 h-16 rounded-full -mt-12"
+            />
+            <h5 class="text-lg font-bold">Jane doe</h5>
+            <p class="text-sm text-gray-600">
+              "I am glad to have come across Hempearl on my timeline. They are
+              now my one-stop plug for african fabrics and accessories"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="bg-slate-800">
+      <div
+        class="container flex flex-wrap md:justify-around md:space-x-6 space-y-8 md:space-y-0 text-gray-200 mx-auto px-6 py-16"
+      >
+        <!-- about us -->
+        <div id="about" class="max-w-sm border">
+          <h3 class="mb-3">HEMPEARL VENTURES</h3>
+          <p class="text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            magni vitae, ratione qui adipisci possimus!
+          </p>
+        </div>
+
+        <!-- list items -->
+        <div class="min-w-sm shrink-0 border">
+          <h4 class="text-left mb-3">QUICK LINKS</h4>
+          <a href="#" class="mb-3 cursor-pointer block">Our Products</a>
+          <a href="#" class="mb-3 cursor-pointer block">Home</a>
+          <a href="#" class="mb-3 cursor-pointer block">Testimonials</a>
+          <a href="#" class="mb-3 cursor-pointer block">Contact us</a>
+        </div>
+
+        <!-- socials -->
+        <div class="flex flex-col justify-between max-w-sm space-y-4 border">
+          <!-- links -->
+          <div class="space-x-3">
+            <span class="text-2xl cursor-pointer"
+              ><i class="fa-brands fa-facebook"></i
+            ></span>
+            <span class="text-2xl cursor-pointer"
+              ><i class="fa-brands fa-instagram"></i
+            ></span>
+            <span class="text-2xl cursor-pointer"
+              ><i class="fa-brands fa-twitter"></i
+            ></span>
+          </div>
+
+          <!-- copyright -->
+          <div>Copyright &copy; 2022. All Rights Reserved.</div>
+        </div>
+      </div>
+
+      <div class="text-center italics text-white bg-slate-900 p-3">
+        designed by
+        <a class="text-blue-300 underline" href="#" target="blank">o2</a>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

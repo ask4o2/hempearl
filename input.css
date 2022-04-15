@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* hamburger menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(8px);
+}
+.hamburger-bottom {
+  transform: translateY(16px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translate(0px);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* hero */
+
+.hero-item-1,
+.hero-item-2 {
+  transition: all 1s;
+}
+
+.tint {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+
+#test-scroll::-webkit-scrollbar {
+  height: 4px; /* height of horizontal scrollbar ← You're missing this */
+  width: 4px; /* width of vertical scrollbar */
+  border: 1px solid #d5d5d5;
+  display: none;
+}
+#test-scroll::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+#hero-1 {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#hero-container {
+  background-color: #dbdcd7;
+  background-image: url("/icons8-team-y2T5hT7pWx4-unsplash_1.jpg");
+  background-position: center left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+
+@media (max-width: 567px) {
+}
