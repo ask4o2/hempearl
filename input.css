@@ -5,6 +5,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 /* hamburger menu */
@@ -75,7 +76,7 @@
 
 #hero-1 {
   background-image: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 #hero-container {
   background-color: #dbdcd7;
@@ -87,4 +88,11 @@
 }
 
 @media (max-width: 567px) {
+}
+
+#text-shadow {
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+}
+#lead-bg {
+  background-color: rgba(0, 0, 0, 0.2);
 }
